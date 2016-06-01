@@ -4,20 +4,29 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+	<h1 class="page-heading">Libertariánský institut - liwebs</h1>
+	<p>Tyto stránky slouží pimárně jako prezentace Michala Kurze ostatním členům LI. Generují se z repozitáře <a href="https://github.com/libertarianinstitute/">github účtu LI</a> (větev gh-pages) </p>
+	<h3 class="bold">V současnosti je tu  k nalezení:</h3>
+	
+	<dl> 
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		<dt><a href="proces.html">Proces vzniky webových stánek LI</a></dt>
+		<dd>Návod jak postupovat při tvoření stránek pro svůj projekt</dd>
+		
+		<dt><a href="mainweb.html">Stav hlavních stránek LI</a></dt>
+		<dd>Stručný popis aktulního stavu webovek a seznam plánovaných úprav</dd>
+		   
+		<dt><a href="current.html">Seznam stránek v tvorbě</a></dt>
+		<dd>Seznam stránek ve vývoji s případným popisem a s odkazy na aktuální podobu</dd>
+		
+		<dt><a href="db.html">Stav databáze dotací</a></dt>
+		<dd>Stránka vysvětlující aktuální stav databáze dotací a návody na práci s ní</dd>
+		
+		<dt><a href="liblock/">Ukázka zámku</a></dt>
+		<dd>Funkční ukázka "zámku" připravena k implementaci na konkrétní domény. Po kliknutí na logo LI se objeví pole pro zadání hesla. Správné heslo uživatele přesměruje na vyžádanou doménu. Heslo nelze ze zdrojového kódu vyčíst, cíl odkazu ano.</dd>
+		
+	</dl>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+ 
 
 </div>

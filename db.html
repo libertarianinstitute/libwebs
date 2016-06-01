@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h1>Stav databáze dotací</h1>
+<p>Databáze je ke stažení z dropboxu  ( <a href="https://www.dropbox.com/home/Libertariansky%22insitut/Dotace%20-%20datab%C3%A1ze%20p%C5%99%C3%ADjemc%C5%AF">Složka /Databáze příjemců dotací/)</a> v .csv a jako sql dump (InnoDB). Mimo to máme dvě verze v mysql přístupné z webu:</p>
+
+<h3 class="bold">1. v cloudu, s nezabezpečeným filtrovacím formulářem, bez fulltextu</h3>
+		<p>Na virtuálu od <a href="http://www.c9.io">c9.io</a>. Filtrovací formulář je dostupný na <a href="https://databaze-prijemcu-dotaci-malejpstros.c9users.io/test_tabulka.php">https://databaze-prijemcu-dotaci-malejpstros.c9users.io/test_tabulka.php</a> (pokud ne, dejte mi vědět a já ji nahodím - c9 ten server občas vypne). Kolonky filtrace odpovídají jednotlivým sloupcům v originální databázi. Poslední pole limituje počet výsledků (prakticky se ale nelze dostat přes ~13 000) </p>
+
+<h3 class="bold">2. na mém osobním virtuálním, s rychlým fulltextovým vyhledáváním, ale bez formuláře</h3>
+<p>Do databáze lze přistupovat přímo ze serveru, nebo přes prostředí phpMyAdmin na adrese <a href="http://37.205.8.51/phpmyadmin/">http://37.205.8.51/phpmyadmin/</a>. Přístup mám zatím já, Zuzka a Urza, na vyžádání dám někomu dalšímu. Vyhledávat tu jde přes sql dotazy (tzn. kdykoliv jakkoliv, bez nutnosti psát formulář kvůli každému testu), výsledky lze rovnou exportovat do spousty formátů (včetně xls a csv). Rád na žádost do mailu cokoliv vyhledám a výsledky pošlu v user-friendly formě.</p>
+	
