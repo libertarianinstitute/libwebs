@@ -1,3 +1,6 @@
+.bold {
+  font-weight: bold; }
+
 /**
  * Reset some basic elements
  */
@@ -13,7 +16,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111;
-  background-color: #fdfdfd;
+  background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -29,6 +32,9 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
   margin-bottom: 15px; }
+
+p {
+  text-align: justify; }
 
 /**
  * Images
@@ -66,13 +72,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #232369;
   text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
   a:hover {
-    color: #111;
-    text-decoration: underline; }
+    color: red; }
 
 /**
  * Blockquotes
@@ -112,16 +115,16 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
+  max-width: -webkit-calc(1180px - (30px * 2));
+  max-width: calc(1180px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
+      max-width: -webkit-calc(1180px - (30px));
+      max-width: calc(1180px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -143,6 +146,9 @@ pre {
   vertical-align: middle; }
   .icon > svg path {
     fill: #828282; }
+
+dd {
+  margin-left: 20px; }
 
 /**
  * Site header
@@ -178,7 +184,7 @@ pre {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #fdfdfd;
+      background-color: #ffffff;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: right; }
@@ -267,7 +273,7 @@ pre {
   padding: 30px 0; }
 
 .page-heading {
-  font-size: 20px; }
+  font-size: 25px; }
 
 .post-list {
   margin-left: 0;
@@ -455,3 +461,20 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+h1 {
+  color: #232369;
+  font-size: 25px;
+  color: #232369;
+  font-size: 25px; }
+
+header.site-header {
+  background-color: #232369; }
+  header.site-header #topnav {
+    line-height: 56px;
+    background-color: #232369;
+    font-size: 120%; }
+    header.site-header #topnav .nitem {
+      margin: 0px 15px; }
+      header.site-header #topnav .nitem > a {
+        color: white; }
